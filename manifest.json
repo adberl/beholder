@@ -1,0 +1,29 @@
+{
+
+  "manifest_version": 2,
+  "name": "Beholder",
+  "version": "1.1b",
+
+  "description": "Notifies you of changes on webpages.",
+  "icons": {
+    "48": "icons/beholder-48.png"
+  },
+
+  "permissions": [
+		"storage",
+    "activeTab",
+    "<all_urls>"
+  ],
+
+  "background": {
+  	"scripts": ["js/backgroundBeholder.js"]
+  },
+
+  "browser_action": {
+  	"browser_style": true,
+    "default_icon": "icons/beholder-32.png",
+    "default_title": "Beholder",
+    "default_popup": "popup/select_element.html"
+  }
+
+}
